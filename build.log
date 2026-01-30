@@ -1,0 +1,35 @@
+
+> portfolio@1.0.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+
+   Creating an optimized production build ...
+Failed to compile.
+
+app\layout.tsx
+An error occurred in `next/font`.
+
+Error: Cannot find module 'caniuse-lite/data/features/background-img-opts'
+Require stack:
+- D:\portfolio\node_modules\autoprefixer\data\prefixes.js
+- D:\portfolio\node_modules\autoprefixer\lib\autoprefixer.js
+- D:\portfolio\node_modules\next\dist\build\webpack\config\blocks\css\plugins.js
+- D:\portfolio\node_modules\next\dist\build\webpack\config\blocks\css\index.js
+- D:\portfolio\node_modules\next\dist\build\webpack\config\index.js
+- D:\portfolio\node_modules\next\dist\build\webpack-config.js
+- D:\portfolio\node_modules\next\dist\build\webpack-build\impl.js
+- D:\portfolio\node_modules\next\dist\compiled\jest-worker\processChild.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at D:\portfolio\node_modules\next\dist\server\require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:986:27)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at mod.require (D:\portfolio\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (D:\portfolio\node_modules\autoprefixer\data\prefixes.js:406:31)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+
+
+> Build failed because of webpack errors
