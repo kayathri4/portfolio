@@ -1,45 +1,48 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Cpu } from "lucide-react";
 
 export default function Navbar() {
     return (
-        <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-            <div className="container flex h-14 items-center justify-between">
-                <div className="mr-4 hidden md:flex">
-                    <Link href="/" className="mr-6 flex items-center space-x-2">
-                        <span className="hidden font-bold sm:inline-block">Kayathri.Dev</span>
+        <nav className="fixed top-0 left-0 right-0 z-[100] border-b border-white/5 bg-background/60 backdrop-blur-md">
+            <div className="container flex h-16 items-center justify-between">
+                <div className="flex items-center gap-8">
+                    <Link href="/" className="flex items-center gap-2 group">
+                        <div className="w-8 h-8 rounded bg-primary/20 flex items-center justify-center border border-primary/30 group-hover:bg-primary/30 transition-colors">
+                            <Cpu className="w-4 h-4 text-primary" />
+                        </div>
+                        <span className="font-mono font-bold text-sm tracking-tighter uppercase">
+                            Kayathri<span className="text-primary italic">.sys</span>
+                        </span>
                     </Link>
-                    <div className="flex gap-6 text-sm font-medium">
-                        <Link href="#about" className="transition-colors hover:text-foreground/80 text-foreground/60">About</Link>
-                        <Link href="#projects" className="transition-colors hover:text-foreground/80 text-foreground/60">Projects</Link>
-                        <Link href="#skills" className="transition-colors hover:text-foreground/80 text-foreground/60">Skills</Link>
+                    <div className="hidden md:flex gap-8">
+                        <Link href="#about" className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">// About</Link>
+                        <Link href="#projects" className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">// Projects</Link>
+                        <Link href="#skills" className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">// Skills</Link>
                     </div>
                 </div>
-                <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
-                    <div className="w-full flex-1 md:w-auto md:flex-none">
-                        {/* Search or extra content */}
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <Link href="https://github.com" target="_blank" rel="noreferrer">
-                            <Button variant="ghost" size="icon">
+
+                <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-1">
+                        <Link href="https://github.com" target="_blank">
+                            <Button variant="ghost" size="icon" className="h-8 w-8 text-muted-foreground hover:text-primary">
                                 <Github className="h-4 w-4" />
-                                <span className="sr-only">GitHub</span>
                             </Button>
                         </Link>
-                        <Link href="https://linkedin.com" target="_blank" rel="noreferrer">
-                            <Button variant="ghost" size="icon">
+                        <Link href="https://linkedin.com" target="_blank">
+                            <Button variant="ghost" size="icon" className="h-8 w-8 text-muted-foreground hover:text-primary">
                                 <Linkedin className="h-4 w-4" />
-                                <span className="sr-only">LinkedIn</span>
-                            </Button>
-                        </Link>
-                        <Link href="mailto:hello@example.com">
-                            <Button variant="ghost" size="icon">
-                                <Mail className="h-4 w-4" />
-                                <span className="sr-only">Email</span>
                             </Button>
                         </Link>
                     </div>
+                    <div className="h-4 w-[1px] bg-white/10 hidden sm:block" />
+                    <Link href="mailto:hello@example.com">
+                        <Button className="bg-primary/10 border border-primary/30 text-primary hover:bg-primary/20 text-[10px] font-mono h-8 px-4 uppercase tracking-wider">
+                            Establish Link
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </nav>
