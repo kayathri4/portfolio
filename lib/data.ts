@@ -24,7 +24,7 @@ export const SITE_CONTENT = {
             description: "A computer vision system utilizing YOLOv8 for instance segmentation to estimate shrimp size and biomass in real-time from mobile images, helping farmers optimize feed.",
             tags: ["YOLOv8", "Computer Vision", "Mobile", "Python"],
             image: "",
-            link: "#"
+            link: "/projects/smartaqua"
         },
         {
             id: "sar-crop",

@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { SITE_CONTENT } from "@/lib/data";
 import { ExternalLink, Layers, Cpu, CheckCircle2, FlaskConical } from "lucide-react";
 import Link from "next/link";
+import SmartAquaPipeline from "./SmartAquaPipeline";
 
 export default function Projects() {
     const { projects } = SITE_CONTENT;
@@ -64,25 +65,30 @@ export default function Projects() {
                                 </p>
 
                                 {/* Pipeline Visualization */}
-                                <div className="flex flex-col gap-3">
-                                    <span className="text-[10px] font-mono text-muted-foreground uppercase tracking-widest">Processing pipeline</span>
-                                    <div className="flex items-center justify-between px-4 py-3 rounded bg-white/5 border border-white/5 font-mono text-[9px] text-white/50">
-                                        <div className="flex flex-col items-center gap-1">
-                                            <span className="text-primary italic">INPUT</span>
-                                            <span>Raw Pixel</span>
-                                        </div>
-                                        <div className="h-[1px] w-8 bg-white/10" />
-                                        <div className="flex flex-col items-center gap-1">
-                                            <span className="text-primary italic">MODEL</span>
-                                            <span>Inference</span>
-                                        </div>
-                                        <div className="h-[1px] w-8 bg-white/10" />
-                                        <div className="flex flex-col items-center gap-1">
-                                            <span className="text-primary italic">OUTPUT</span>
-                                            <span>INSIGHT</span>
+                                {/* Pipeline Visualization */}
+                                {project.id === 'smartaqua' ? (
+                                    <SmartAquaPipeline />
+                                ) : (
+                                    <div className="flex flex-col gap-3">
+                                        <span className="text-[10px] font-mono text-muted-foreground uppercase tracking-widest">Processing pipeline</span>
+                                        <div className="flex items-center justify-between px-4 py-3 rounded bg-white/5 border border-white/5 font-mono text-[9px] text-white/50">
+                                            <div className="flex flex-col items-center gap-1">
+                                                <span className="text-primary italic">INPUT</span>
+                                                <span>Raw Pixel</span>
+                                            </div>
+                                            <div className="h-[1px] w-8 bg-white/10" />
+                                            <div className="flex flex-col items-center gap-1">
+                                                <span className="text-primary italic">MODEL</span>
+                                                <span>Inference</span>
+                                            </div>
+                                            <div className="h-[1px] w-8 bg-white/10" />
+                                            <div className="flex flex-col items-center gap-1">
+                                                <span className="text-primary italic">OUTPUT</span>
+                                                <span>INSIGHT</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                )}
 
                                 {/* Metrics */}
                                 <div className="grid grid-cols-2 gap-4">
