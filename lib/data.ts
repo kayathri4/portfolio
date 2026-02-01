@@ -6,9 +6,9 @@ export const SITE_CONTENT = {
         description: "Specializing in SAR processing, agricultural analytics, and deep learning for Earth observation. Transforming petabytes of pixel data into meaningful patterns.",
         badges: ["Python", "PyTorch", "Sentinel-1/2", "GEE", "YOLOv8", "TensorFlow", "PostGIS"],
         socials: {
-            github: "https://github.com",
-            linkedin: "https://linkedin.com",
-            email: "mailto:hello@example.com",
+            github: "https://github.com/kayathri4",
+            linkedin: "https://linkedin.com/in/kayathri-vig",
+            email: "mailto:kayathri@gmail.com",
             scholar: "https://scholar.google.com"
         }
     },
@@ -55,9 +55,9 @@ export const SITE_CONTENT = {
         }
     ],
     skills: {
-        "Remote Sensing & SAR": ["Sentinel-1/2", "SNAP", "Google Earth Engine", "InSAR", "Polarimetry"],
-        "Machine Learning": ["PyTorch", "TensorFlow", "Scikit-learn", "YOLO", "U-Net", "Transformers"],
-        "Geospatial Dev": ["GDAL/OGR", "Rasterio", "Geopandas", "PostGIS", "ArcGIS API"],
-        "Cloud & Tools": ["AWS", "Docker", "Git", "Linux", "QGIS"]
+        "Remote Sensing & SAR": ["Sentinel-1/2", "SNAP", "Google Earth Engine", "InSAR", "Polarimetry", "Open Data Cube"],
+        "Machine Learning": ["PyTorch", "TensorFlow", "Scikit-learn", "YOLO", "U-Net", "Transformers", "Computer Vision", "OCR", "Roboflow", "LabelImg"],
+        "Geospatial Dev": ["Python", "R", "Flask", "Streamlit", "Postman", "Swagger", "PostGIS", "SQL", "ETL Pipelines"],
+        "Cloud & Tools": ["AWS", "Docker", "Git", "Keycloak", "Agile", "Linux", "QGIS"]
     }
 };

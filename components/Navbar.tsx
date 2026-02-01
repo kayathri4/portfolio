@@ -18,29 +18,30 @@ export default function Navbar() {
                         </span>
                     </Link>
                     <div className="hidden md:flex gap-8">
-                        <Link href="#about" className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">// About</Link>
-                        <Link href="#projects" className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">// Projects</Link>
-                        <Link href="#skills" className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">// Skills</Link>
+                        <Link href="#about" className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors"> About</Link>
+                        <Link href="#projects" className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors"> Projects</Link>
+                        <Link href="#research" className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors"> Research</Link>
+                        <Link href="#skills" className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors"> Skills</Link>
                     </div>
                 </div>
 
                 <div className="flex items-center gap-4">
                     <div className="flex items-center gap-1">
-                        <Link href="https://github.com" target="_blank">
+                        <Link href="https://github.com/kayathri4" target="_blank">
                             <Button variant="ghost" size="icon" className="h-8 w-8 text-muted-foreground hover:text-primary">
                                 <Github className="h-4 w-4" />
                             </Button>
                         </Link>
-                        <Link href="https://linkedin.com" target="_blank">
+                        <Link href="https://linkedin.com/in/kayathri-vig" target="_blank">
                             <Button variant="ghost" size="icon" className="h-8 w-8 text-muted-foreground hover:text-primary">
                                 <Linkedin className="h-4 w-4" />
                             </Button>
                         </Link>
                     </div>
                     <div className="h-4 w-[1px] bg-white/10 hidden sm:block" />
-                    <Link href="mailto:hello@example.com">
+                    <Link href="#contact">
                         <Button className="bg-primary/10 border border-primary/30 text-primary hover:bg-primary/20 text-[10px] font-mono h-8 px-4 uppercase tracking-wider">
-                            Establish Link
+                            Let&apos;s connect
                         </Button>
                     </Link>
                 </div>

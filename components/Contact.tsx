@@ -30,31 +30,43 @@ export default function Contact() {
                         <Radio className="w-8 h-8" />
                     </div>
                     <span className="text-[10px] font-mono text-accent uppercase tracking-[0.4em]">Signal_Locked: Awaiting_Input</span>
-                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Initiate Uplink</h2>
-                    <p className="max-w-md text-muted-foreground leading-relaxed">
-                        Ready for mission deployment. Open for technical collaborations on geospatial analysis and deep learning research.
+                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Let&apos;s Connect</h2>
+                    <p className="max-w-xl text-muted-foreground leading-relaxed">
+                        Ready to collaborate on geospatial intelligence, Earth observation, or applied AI systems.
+                        Open to research, engineering, and ML-focused roles in satellite analytics and computer vision.
                     </p>
                 </div>
 
-                <div className="relative z-10 flex flex-col sm:flex-row gap-4 mt-4">
-                    <Link href={hero.socials.email}>
-                        <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold h-14 px-10 group relative overflow-hidden">
-                            <span className="relative z-10 flex items-center">
-                                <Mail className="mr-3 h-5 w-5" /> Establish Connection
-                            </span>
-                            <motion.div
-                                className="absolute inset-0 bg-white/20"
-                                initial={{ x: "-100%" }}
-                                whileHover={{ x: "100%" }}
-                                transition={{ duration: 0.5 }}
-                            />
-                        </Button>
-                    </Link>
-                    <Link href={hero.socials.linkedin} target="_blank">
-                        <Button variant="outline" size="lg" className="h-14 px-10 border-white/10 hover:bg-white/5 transition-all text-sm font-mono uppercase tracking-widest">
-                            <Linkedin className="mr-3 h-5 w-5 text-primary" /> LinkedIn_Auth
-                        </Button>
-                    </Link>
+                <div className="relative z-10 w-full max-w-2xl flex flex-col gap-12 mt-4">
+                    <div className="flex flex-col gap-6">
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <Link href={hero.socials.email} className="min-w-[160px]">
+                                <Button className="w-full bg-accent hover:bg-accent/90 text-white font-bold h-12 group relative overflow-hidden">
+                                    <Mail className="mr-2 h-4 w-4" /> Email
+                                </Button>
+                            </Link>
+                            <Link href={hero.socials.linkedin} target="_blank" className="min-w-[160px]">
+                                <Button variant="outline" className="w-full h-12 border-white/10 hover:bg-white/5 font-mono text-xs uppercase tracking-widest">
+                                    <Linkedin className="mr-2 h-4 w-4 text-primary" /> LinkedIn
+                                </Button>
+                            </Link>
+                        </div>
+                    </div>
+                    {/* 
+                    <div className="flex flex-col gap-8 pt-12 border-t border-white/5 items-center">
+                        <h4 className="text-sm md:text-base font-mono text-primary uppercase tracking-[0.3em] font-bold">Open to Opportunities In</h4>
+                        <div className="flex flex-col gap-4 text-center">
+                            {[
+                                "Geospatial Data Science",
+                                "Computer Vision Engineer (Geospatial Focus)",
+                                "Machine Learning Engineer (Geospatial Focus)"
+                            ].map((role) => (
+                                <div key={role} className="text-lg md:text-2xl font-bold tracking-tight text-foreground/90 hover:text-primary transition-colors cursor-default">
+                                    {role}
+                                </div>
+                            ))}
+                        </div>
+                    </div> */}
                 </div>
 
                 <div className="relative z-10 pt-8 mt-8 border-t border-white/5 w-full flex items-center justify-center gap-2 text-[9px] font-mono text-muted-foreground uppercase opacity-50 tracking-tighter">

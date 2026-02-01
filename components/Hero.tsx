@@ -28,13 +28,13 @@ export default function Hero() {
     return (
         <section className="relative min-h-[90vh] flex flex-col items-center justify-center px-6 py-20 overflow-hidden">
             {/* Coordinate Overlay */}
-            <div className="absolute top-10 right-10 flex flex-col items-end opacity-40 select-none hidden md:flex">
+            <div className="absolute top-10 right-10 flex flex-col items-end opacity-80 select-none hidden md:flex">
                 <div className="flex items-center gap-2 text-[10px] font-mono tracking-[0.2em] text-primary">
                     <Crosshair className="w-3 h-3" />
-                    <span>LOCKED_LOC: 10.21°N, 78.45°E</span>
+                    <span>LOCKED_LOC: 35.67°N, 139.65°E</span>
                 </div>
                 <div className="text-[10px] font-mono text-muted-foreground mt-1 uppercase">
-                    Sensor: Sentinel-1 SAR / C-Band
+                    Sector: Tokyo, Japan // Pacific_Rim
                 </div>
             </div>
 
@@ -45,12 +45,18 @@ export default function Hero() {
                     transition={{ duration: 0.8 }}
                     className="flex flex-col items-center gap-4"
                 >
-                    <div className="flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-[10px] font-mono uppercase tracking-widest animate-pulse">
-                        <span className="relative flex h-2 w-2">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                        </span>
-                        System Online: Active Monitoring
+                    <div className="flex flex-wrap items-center justify-center gap-3">
+                        <div className="flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-[10px] font-mono uppercase tracking-widest animate-pulse">
+                            <span className="relative flex h-2 w-2">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                            </span>
+                            System Online: Active Monitoring
+                        </div>
+                        <div className="flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-muted-foreground text-[10px] font-mono uppercase tracking-widest">
+                            <MapIcon className="w-3 h-3 text-primary" />
+                            Tokyo, Japan
+                        </div>
                     </div>
 
                     <h1 className="text-4xl md:text-7xl font-extrabold tracking-tighter max-w-4xl text-balance">
