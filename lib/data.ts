@@ -2,7 +2,7 @@ export const SITE_CONTENT = {
     hero: {
         name: "Kayathri",
         role: "Geospatial Data Scientist / Remote Sensing & ML Engineer",
-        tagline: "Bridging the gap between Satellite Imagery and actionable insights.",
+        description: "Bridging the gap between Satellite Imagery and actionable insights.",
         badges: ["Python", "PyTorch", "Sentinel-1/2", "GEE", "YOLOv8", "TensorFlow", "PostGIS"],
         socials: {
             github: "https://github.com/kayathri4",
