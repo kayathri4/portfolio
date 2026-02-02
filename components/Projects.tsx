@@ -14,6 +14,9 @@ import { SITE_CONTENT } from "@/lib/data";
 import { ExternalLink, Layers, Cpu, CheckCircle2, FlaskConical } from "lucide-react";
 import Link from "next/link";
 import SmartAquaPipeline from "./SmartAquaPipeline";
+import RiverGaugePipeline from "./RiverGaugePipeline";
+import RainfallDroughtPipeline from "./RainfallDroughtPipeline";
+import SARRicePipeline from "./SARRicePipeline";
 
 export default function Projects() {
     const { projects } = SITE_CONTENT;
@@ -54,9 +57,9 @@ export default function Projects() {
                                         {idx % 2 === 0 ? <Layers className="w-6 h-6" /> : <Cpu className="w-6 h-6" />}
                                     </div>
                                 </div>
-                                <div className="font-mono text-[11px] text-primary bg-primary/10 px-2 py-1 rounded inline-block w-fit uppercase">
+                                {/* <div className="font-mono text-[11px] text-primary bg-primary/10 px-2 py-1 rounded inline-block w-fit uppercase">
                                     {project.subtitle}
-                                </div>
+                                </div> */}
                             </CardHeader>
 
                             <CardContent className="flex flex-col gap-6 relative z-10">
@@ -65,9 +68,14 @@ export default function Projects() {
                                 </p>
 
                                 {/* Pipeline Visualization */}
-                                {/* Pipeline Visualization */}
                                 {project.id === 'smartaqua' ? (
                                     <SmartAquaPipeline />
+                                ) : project.id === 'sar-crop' ? (
+                                    <SARRicePipeline />
+                                ) : project.id === 'river-gauge' ? (
+                                    <RiverGaugePipeline />
+                                ) : project.id === 'rainfall & drought' ? (
+                                    <RainfallDroughtPipeline />
                                 ) : (
                                     <div className="flex flex-col gap-3">
                                         <span className="text-[10px] font-mono text-muted-foreground uppercase tracking-widest">Processing pipeline</span>
@@ -91,7 +99,7 @@ export default function Projects() {
                                 )}
 
                                 {/* Metrics */}
-                                <div className="grid grid-cols-2 gap-4">
+                                {/* <div className="grid grid-cols-2 gap-4">
                                     <div className="p-3 rounded border border-white/5 bg-white/5 flex flex-col gap-1">
                                         <span className="text-[9px] font-mono text-muted-foreground uppercase">Precision_Score</span>
                                         <span className="text-lg font-mono text-primary font-bold">94.2%</span>
@@ -100,7 +108,7 @@ export default function Projects() {
                                         <span className="text-[9px] font-mono text-muted-foreground uppercase">Lat_Refresh</span>
                                         <span className="text-lg font-mono text-primary font-bold"><span className="text-xs">NRT</span></span>
                                     </div>
-                                </div>
+                                </div> */}
 
                                 <div className="flex flex-wrap gap-2">
                                     {project.tags.map(tag => (

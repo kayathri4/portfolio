@@ -32,8 +32,8 @@ export default function About() {
                             <div className="flex flex-col gap-4">
                                 <div className="flex flex-col gap-1 border-l border-primary/20 pl-4 py-2">
                                     <span className="text-[10px] font-mono text-muted-foreground uppercase">Status: ACTIVE</span>
-                                    <span className="text-[10px] font-mono text-muted-foreground uppercase">Role: GS-DATA_SCIENTIST</span>
-                                    <span className="text-[10px] font-mono text-muted-foreground uppercase mt-4">Sector: Tokyo // Japan</span>
+                                    <span className="text-[10px] font-mono text-muted-foreground uppercase">Experience: 3+ Years</span>
+                                    <span className="text-[10px] font-mono text-muted-foreground uppercase mt-4">Sector: Geospatial data science</span>
                                 </div>
                             </div>
 
@@ -41,7 +41,7 @@ export default function About() {
                             <div className="flex flex-col gap-6 text-muted-foreground leading-relaxed md:text-lg">
                                 <p>{about.summary}</p>
                                 <p>{about.details}</p>
-
+                                {/* 
                                 <div className="pt-6 border-t border-white/5 flex flex-wrap gap-x-8 gap-y-4">
                                     <div className="flex flex-col">
                                         <span className="text-[10px] font-mono text-primary uppercase tracking-widest">Core_Focus</span>
@@ -55,7 +55,7 @@ export default function About() {
                                         <span className="text-[10px] font-mono text-primary uppercase tracking-widest">Location</span>
                                         <span className="text-sm font-semibold text-foreground">35.67°N, 139.65°E</span>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

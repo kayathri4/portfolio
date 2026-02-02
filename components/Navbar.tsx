@@ -14,7 +14,7 @@ export default function Navbar() {
                             <Cpu className="w-4 h-4 text-primary" />
                         </div>
                         <span className="font-mono font-bold text-sm tracking-tighter uppercase">
-                            Kayathri<span className="text-primary italic">.sys</span>
+                            Kayathri Vigneswaran
                         </span>
                     </Link>
                     <div className="hidden md:flex gap-8">

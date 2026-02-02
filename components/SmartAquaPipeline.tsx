@@ -76,10 +76,6 @@ export default function SmartAquaPipeline() {
                         </li>
                         <li className="flex items-start gap-1.5">
                             <span className="text-primary/50 mt-[2px]">&gt;</span>
-                            <span>Growth-rate intelligence</span>
-                        </li>
-                        <li className="flex items-start gap-1.5">
-                            <span className="text-primary/50 mt-[2px]">&gt;</span>
                             <span>Operational alerts</span>
                         </li>
                     </ul>

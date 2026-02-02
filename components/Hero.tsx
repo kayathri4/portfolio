@@ -8,7 +8,7 @@ import Link from "next/link";
 import { ArrowRight, Map as MapIcon, Crosshair } from "lucide-react";
 
 const SUBTITLES = [
-    "SAR • ML • Computer Vision",
+    "•Optical •SAR •ML/DL •Computer Vision",
     "Satellite Analytics for Real-World Systems",
     "Geospatial Intelligence & Remote Sensing",
     "Reproducible Geospatial Pipelines"

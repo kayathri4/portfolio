@@ -41,10 +41,10 @@ export default function SmartAquaPage() {
                                 <Info className="w-3 h-3" /> System_Analysis: SmartAqua_v1.0
                             </div>
                             <h1 className="text-4xl md:text-7xl font-bold tracking-tighter mb-6 bg-gradient-to-r from-white via-white to-white/40 bg-clip-text text-transparent">
-                                SmartAqua: Shrimp Growth Estimation
+                                SmartAqua: Water Quality Monitoring
                             </h1>
                             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed italic border-l-4 border-primary/20 pl-6 mb-8">
-                                "A computer vision system utilizing YOLOv8 for instance segmentation to estimate shrimp size and biomass in real-time from mobile images, helping farmers optimize feed."
+                                "Shrimp Farm Water Quality Monitoring via Satellite data. An automated Python pipeline that monitors Chlorophyll-a and Turbidity in shrimp ponds using harmonized Sentinel-2 and Landsat data."
                             </p>
                         </motion.div>
                     </div>
@@ -80,18 +80,18 @@ export default function SmartAquaPage() {
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                             {[
-                                { label: "Model_Architecture", value: "YOLOv8-Seg" },
-                                { label: "Deployment_Target", value: "Edge/Mobile" },
-                                { label: "Latency_Score", value: "< 45ms" }
+                                { label: "Model_Architecture", value: "Random Forest" },
+                                { label: "Data_Source", value: "Sentinel-2/Landsat" },
+                                { label: "Refresh_Rate", value: "High-Frequency" }
                             ].map((item, i) => (
                                 <div key={i} className="p-4 rounded-lg bg-white/5 border border-white/5 font-mono">
                                     <div className="text-[9px] text-muted-foreground uppercase mb-1">{item.label}</div>
                                     <div className="text-sm font-bold text-primary">{item.value}</div>
                                 </div>
                             ))}
-                        </div>
+                        </div> */}
                     </motion.div>
 
                     {/* Technical Breakdown */}
@@ -108,12 +108,11 @@ export default function SmartAquaPage() {
                             </h3>
                             <ul className="space-y-4 font-mono text-xs">
                                 {[
-                                    "Automated biomass estimation",
-                                    "Real-time instance segmentation",
-                                    "Species-specific growth tracking",
-                                    "Cloud-integrated analytics",
-                                    "Mobile-first deployment",
-                                    "Feed optimization logic"
+                                    "Automated water quality monitoring",
+                                    "Sentinel-2 & Landsat data fusion",
+                                    "Chlorophyll-a & Turbidity analysis",
+                                    "Machine Learning calibration (RF)",
+                                    "Environmental risk mitigation"
                                 ].map((feature, i) => (
                                     <li key={i} className="flex items-center gap-3 text-muted-foreground group-hover:text-white transition-colors">
                                         <span className="text-primary font-bold">{`[0${i + 1}]`}</span>
@@ -126,7 +125,7 @@ export default function SmartAquaPage() {
                         <div className="p-6 rounded-xl border border-dashed border-white/10 bg-white/[0.02]">
                             <h4 className="text-sm font-bold mb-4 uppercase tracking-widest opacity-60">Tech_Stack_Audit</h4>
                             <div className="flex flex-wrap gap-2">
-                                {["Python", "PyTorch", "OpenCV", "Roboflow", "React Native", "FastAPI"].map(tech => (
+                                {["Python", "ODC-STAC", "ACOLITE", "Sentinel-2/Landsat", "Random Forest", "Spatial API"].map(tech => (
                                     <span key={tech} className="px-2 py-1 bg-white/5 rounded text-[10px] text-muted-foreground font-mono">
                                         {tech}
                                     </span>
