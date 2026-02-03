@@ -14,7 +14,7 @@ export default function Footer() {
                 <div className="flex items-center gap-4 text-[10px] font-mono text-muted-foreground uppercase tracking-widest">
                     <span>{new Date().getFullYear()} © Kayathri.Dev</span>
                     <span className="opacity-20">|</span>
-                    <span className="text-primary italic">Status: Nominal</span>
+                    <span className="text-primary italic">Status: Active</span>
                 </div>
             </div>
         </footer>

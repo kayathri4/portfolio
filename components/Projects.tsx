@@ -47,8 +47,8 @@ export default function Projects() {
                             {/* Scanline effect on card hover */}
                             <div className="absolute inset-0 bg-gradient-to-t from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
 
-                            <CardHeader className="relative z-10">
-                                <div className="flex justify-between items-start mb-4">
+                            <CardHeader className="relative z-10 pb-2">
+                                <div className="flex justify-between items-start mb-2">
                                     <div className="flex flex-col gap-1">
                                         <span className="text-[10px] font-mono text-primary/60">ID: {project.id.toUpperCase()}</span>
                                         <CardTitle className="text-2xl font-bold group-hover:text-primary transition-colors">{project.title}</CardTitle>
@@ -57,9 +57,6 @@ export default function Projects() {
                                         {idx % 2 === 0 ? <Layers className="w-6 h-6" /> : <Cpu className="w-6 h-6" />}
                                     </div>
                                 </div>
-                                {/* <div className="font-mono text-[11px] text-primary bg-primary/10 px-2 py-1 rounded inline-block w-fit uppercase">
-                                    {project.subtitle}
-                                </div> */}
                             </CardHeader>
 
                             <CardContent className="flex flex-col gap-6 relative z-10">

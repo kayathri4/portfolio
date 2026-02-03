@@ -13,7 +13,7 @@ export const SITE_CONTENT = {
     },
     about: {
         summary: "I am a Geospatial Data Scientist specializing in AI-driven environmental intelligence solutions. Experience in managing and analyzing large-scale geospatial datasets, including SAR and optical satellite data, and in designing robust validation and performance evaluation frameworks.",
-        details: "Experienced in architecting end-to-end data pipelines that integrate object detection, generative AI, and predictive modeling for real-world environmental monitoring using camera-based images. Strong background in model calibration, validation, and performance evaluation to ensure reliable and scalable deployment of data-driven solutions. Proficient in full-stack development, from backend APIs to frontend interfaces."
+        details: "Experienced in implementing end-to-end data pipelines that integrate object detection, generative AI, and predictive modeling for real-world environmental monitoring for camera-based images and satellite data. Strong background in model calibration, validation, and performance evaluation to ensure reliable and scalable deployment of data-driven solutions. Proficient in full-stack development, from backend APIs to frontend interfaces."
     },
     projects: [
         {
@@ -39,7 +39,7 @@ export const SITE_CONTENT = {
             title: "Automated river gauge plate reading using a hybrid object detection and genAI",
             subtitle: "",
             description: "Developed an automated river gauge plate reading system for the Limpopo River Basin using computer vision and generative AI to extract water levels from field images.The framework combines object detection, pose-based scale extraction, and multimodal LLM reasoning to extract river discharge reading.",
-            tags: ["YOLOv8", "YOLOv8-Pose", "GPT-4o", "Gemini 2.0", "Python"],
+            tags: ["YOLOv8", "YOLOv8-Pose", "GPT-4o", "Gemini 2.0", "Python", "DVC", "MLflow"],
             image: "",
             link: "/projects/river-gauge",
             paperUrl: "https://arxiv.org/abs/2512.23454"
@@ -71,6 +71,16 @@ export const SITE_CONTENT = {
         "Machine Learning": ["PyTorch", "TensorFlow", "Scikit-learn", "YOLO", "U-Net", "Transformers", "Computer Vision", "OCR", "Roboflow", "LabelImg"],
         "Geospatial Dev": ["Python (pandas,numpy,plotly,matplotlib,seaborn)", "R", "Flask", "Streamlit", "Postman", "Swagger", "PostGIS", "SQL", "ETL Pipelines"],
         "Cloud & Tools": ["AWS", "Docker", "Git", "Keycloak", "Agile", "Linux", "QGIS"]
-    }
+    },
+    achievements: [
+        {
+            title: "Winner of 'Most Sustainable Solution' Award",
+            organization: "Dialog Innovation Challenge",
+            project: "SMART IOT SOLUTIONS in AQUACULTURE",
+            image: "/dialog-award.jpg",
+            link: "https://www.dialog.lk/news/dialog-crowns-top-digital-innovators-at-grand-finale-of-innovation-challenge",
+            description: "Recognized for developing a sustainable IoT solution tailored for precision aquaculture monitoring."
+        }
+    ]
 
 };

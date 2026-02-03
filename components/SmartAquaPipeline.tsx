@@ -45,7 +45,7 @@ export default function SmartAquaPipeline() {
                     <ul className="flex flex-col gap-1.5 text-white/70">
                         <li className="flex items-start gap-1.5">
                             <span className="text-primary/50 mt-[2px]">&gt;</span>
-                            <span>Water-specific correction</span>
+                            <span>Atmospheric-specific correction</span>
                         </li>
                         <li className="flex items-start gap-1.5">
                             <span className="text-primary/50 mt-[2px]">&gt;</span>

@@ -21,6 +21,7 @@ export default function Navbar() {
                         <Link href="#about" className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors"> About</Link>
                         <Link href="#projects" className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors"> Projects</Link>
                         <Link href="#research" className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors"> Research</Link>
+                        <Link href="#achievements" className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors"> Achievements</Link>
                         <Link href="#skills" className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors"> Skills</Link>
                     </div>
                 </div>
