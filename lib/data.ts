@@ -7,7 +7,7 @@ export const SITE_CONTENT = {
         socials: {
             github: "https://github.com/kayathri4",
             linkedin: "https://linkedin.com/in/kayathri-vig",
-            email: "mailto:kayathri@gmail.com",
+            email: "mailto:kayathri.vig@gmail.com",
             scholar: "https://scholar.google.com"
         }
     },

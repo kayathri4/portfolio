@@ -40,11 +40,11 @@ export default function Contact() {
                 <div className="relative z-10 w-full max-w-2xl flex flex-col gap-12 mt-4">
                     <div className="flex flex-col gap-6">
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href={hero.socials.email} className="min-w-[160px]">
+                            <a href={hero.socials.email} className="min-w-[160px]">
                                 <Button className="w-full bg-accent hover:bg-accent/90 text-white font-bold h-12 group relative overflow-hidden">
                                     <Mail className="mr-2 h-4 w-4" /> Email
                                 </Button>
-                            </Link>
+                            </a>
                             <Link href={hero.socials.linkedin} target="_blank" className="min-w-[160px]">
                                 <Button variant="outline" className="w-full h-12 border-white/10 hover:bg-white/5 font-mono text-xs uppercase tracking-widest">
                                     <Linkedin className="mr-2 h-4 w-4 text-primary" /> LinkedIn
